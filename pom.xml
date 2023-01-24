@@ -72,7 +72,7 @@
 					<JVMArgs>
 						<!-- <JVMArg>your-args</JVMArg> -->
 					</JVMArgs>
-					<mainClass>com.example.inventory/com.example.example.Main</mainClass>
+					<mainClassName>com.example.example.Main</mainClassName>
 					<openingPath>/</openingPath>
 				</configuration>
 			</plugin>
