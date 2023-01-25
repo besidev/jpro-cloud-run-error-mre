@@ -2,7 +2,7 @@ FROM maven:3.8.6-eclipse-temurin-17-focal AS build
 COPY . /source
 WORKDIR /source
 RUN apt-get update && apt-get -y --no-install-recommends install unzip
-#RUN mvn clean install
+RUN mvn clean install
 RUN mvn jpro:release
 RUN unzip target/Inventory-jpro.zip -d target/Inventory-jpro
 
